@@ -1,0 +1,17 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  justTest:
+    environment: dev
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: ./.github/workflow/resuable.yml
+        with:
+          config-path: .github/labeler.yml
+          secrets: inherit
