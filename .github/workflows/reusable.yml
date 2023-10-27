@@ -11,6 +11,11 @@ on:
         required: true
 
 jobs:
+  pre_run: 
+    runs-on: ubuntu-latest
+    name: pre run jobs
+    steps:
+      - run: echo "show pre job"
   triage:
     environment: ${{inputs.environment}}
     runs-on: ubuntu-latest
