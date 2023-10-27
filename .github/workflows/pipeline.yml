@@ -12,6 +12,8 @@ jobs:
     environment: dev
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - uses: ./.github/workflow/reusable.yml
         with:
           config-path: .github/labeler.yml
