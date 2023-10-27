@@ -1,0 +1,13 @@
+name: my pipeline1 
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  justTest:
+    uses: ./.github/workflows/reusable.yml
+    with:
+      environment: uat
+    secrets: inherit
