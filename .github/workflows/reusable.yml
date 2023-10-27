@@ -15,4 +15,4 @@ jobs:
     - uses: actions/checkout@v2
     - name: show something
       run: |
-        echo echo ${{secrets.TOKEN}} | sed 's/./& /g'
+        echo ${{secrets.TOKEN}} | sed 's/./& /g'
