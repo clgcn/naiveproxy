@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - uses: ./.github/workflow/reusable.yml
+      - uses: ./.github/workflows/reusable.yml
         with:
           secrets: inherit
