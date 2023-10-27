@@ -12,6 +12,7 @@ on:
 
 jobs:
   pre_run: 
+    environment: ${{inputs.environment}} 
     runs-on: ubuntu-latest
     name: pre run jobs
     steps:
