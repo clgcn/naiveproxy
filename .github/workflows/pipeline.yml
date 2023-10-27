@@ -9,4 +9,4 @@ jobs:
   justTest:
     uses: ./.github/workflows/reusable.yml
     with:
-      secrets: inherit
+      environment: dev
